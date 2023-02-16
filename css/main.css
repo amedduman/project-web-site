@@ -760,7 +760,7 @@ img, canvas, iframe, video, svg {
 }
 
 .download {
-  max-height: 45px;
+  max-height: 75px;
 }
 
 .mentioned {
@@ -1471,7 +1471,7 @@ hr {
 }
 
 .bg--dark-gray {
-  background-color: #262b3a;
+  background-color: rgba(95, 95, 95, 0.431372549);
 }
 
 .bg--darkest-gray {
