@@ -160,10 +160,13 @@
                 <img class="cta-image mb2 reveal-on-scroll is-revealing" src="./img/email.png" alt="Text the app">
                 <p class="h3 text--white mb1 bold">We'll let you know when kickstarter page is available&nbsp;</p>
                 <p class="text--white mb3">Just insert your email below&nbsp;.</p>
-                <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
-                    <input class="form-control" type="tel" placeholder="email address">
-                </div>
-                <button class="btn btn--secondary">Send</button>
+                <form method="post" action="https://formsubmit.co/2ede3a83304fe01f3c719792acd59cc3">
+                    <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
+                        <input class="form-control" name="email" type="email" placeholder="email address">
+                    </div>
+                    <button type="submit" class="btn btn--secondary">Send</button>
+                </form>
+                
             </div>
         </div>
 
@@ -188,9 +191,11 @@
                 </div>
                 <div class="grid-column mt2 span-half align--right align--center-on-mobile">
                     <ul class="no-bullets list--inline">
+                        <!--
                         <li class="mr1"><a href="" class="link"><img class="icon" src="./img/youtube.svg" alt="YouTube"></a></li>
                         <li class="mr1"><a href="" class="link"><img class="icon" src="./img/twitter.svg" alt="Twitter"></a></li>
                         <li><a href="" class="link"><img class="icon" src="./img/facebook.svg" alt="Facebook"></a></li>
+                        -->
                     </ul>
                 </div>
             </div>
@@ -200,22 +205,22 @@
     <!-- contact us -->
     <div class="container--lg pt1 pb1">
         <p class="h3 text--dark-gray mb1 bold">Contact us&nbsp;</p>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="https://formsubmit.co/2ede3a83304fe01f3c719792acd59cc3">
                 <!-- your name -->
                 <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
-                    <input class="form-control" type="tel" placeholder="your name" required>
+                    <input class="form-control" type="tel" name="name" placeholder="your name" required>
                 </div>
                 <!-- your email -->
                 <div class="mt1 mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
-                    <input class="form-control" type="email" placeholder="your email" required>
+                    <input class="form-control" type="email" name="email" placeholder="your email" required>
                 </div>
                 <!-- your message -->
                 <div class="mt1 mr1 no-mr-on-mobile" style="width:3000px;max-width:100%">
-                    <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" placeholder="your message" required></textarea>
+                    <textarea name="Message" class="form-control" rows="6" maxlength="3000" placeholder="your message" required></textarea>
                 </div>
                 <!-- send button -->
                 <div>
-                    <button type="submit" id="fcf-button" class="btn btn--secondary">Send</button>
+                    <button type="submit" class="btn btn--secondary">Send</button>
                 </div>
         </form> 
     </div>
